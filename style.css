@@ -1,2 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root{
+ 
+
+    --primery-color: black;
+    --secondry-color: white;
+    --dymbolcolors:black;
+    --shadow: rgb(64,64,64,0.5)-5px 5px,  rgb(64,64,64,0.4) -10px 10px, rgb(64,64,64,0.3) -15px 15px,  rgb(64,64,64,0.2) -20px 20px,  rgb(64,64,64,0.1) -25px 25px;
+    
+}
+
+.dark-them{
+    --primery-color: white;
+    --secondry-color: black;
+    --dymbolcolors:#54B435;
+    --shadow:rgba(56,121,36,0.5)-5px 5px, rgba(56,121,36,0.4) -10px 10px,rgba(56,121,36,0.3) -15px 15px, rgba(56,121,36,0.2) -20px 20px, rgba(56,121,36,0.1) -25px 25px;
+
+}
+
+
+
+#button-equal
+{
+    width: 175px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Caveat", cursive;
+    box-sizing: border-box;
+}
+.big-pa{
+    width: 100%;
+    height: 170vh;
+    background: var(--secondry-color);
+}
+
+.nav-bar{
+    padding: 20px 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.nav-icones{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-top: 20px;
+    position: relative;
+    left:140px;
+}
+
+.nav-bar .logo{
+    font-size: 70px;
+    cursor: pointer;
+}
+
+
+#color-settings
+{
+   display: flex;
+   flex-direction: column;
+}
+
+#color-settings{
+    visibility: hidden;
+}
+#color-input{
+    border:2px black solid;
+}
+#button-colors{
+    font-size: 15px;
+    font-family: monospace;
+    font-weight:bold;
+    color:var(--primery-color);
+}
+#darkmode i{
+    font-size: 40px;
+    color:var(--primery-color);
+    transition: font-size 1s;
+} 
+#darkmode-symbol-id:hover
+{
+    font-size: 30px;
+}
+
+#setting i{
+    font-size: 40px;
+    color: var(--primery-color);
+    transform: rotate(0deg);
+    transition: transform 1s , font-size 1s;
+}
+
+#settingId:hover{
+    transform: rotate(90deg);
+    font-size: 35px;
+    color: tomato;
+}
+
+#clearicone{
+    font-size: 40px;
+    color: black;
+    transition: font-size 1s;
+    font-size: 35px; 
+    transition: font-size 1s;   
+}
+#clearicone:hover{
+    font-size: 30px;
+}
+
+.logo{
+    position: relative;
+    left: 300px;
+    
+}
+
+.logo p{
+    color:var(--primery-color);
+    font-size: 100px;
+    transition: font-size 1s;
+}
+.logo p:hover{
+    font-size: 130px;
+}
+.logo span{
+    color: #54B435;
+    font-size: 100px;
+    
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.calculator{
+    width: 40%;
+    height: 70%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #333333;
+    border-radius: 50px;
+    display: flex;
+    box-shadow: var(--shadow);
+    border: 1px solid black;
+}
+.container{
+
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.calculator .container form input{
+    border: 0;
+    outline: 0;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255,255,0.1), 5px 5px 15px rgba(0, 0,0,0.2);
+    background: transparent;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #54B435;
+}
+
+form .display{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 10px 10px ;
+    background-color: lightgreen;
+    border-radius: 20px;
+     height: 140px;
+     width: 100%;
+     text-align: right;
+     font-size: 25px;
+     position: relative;
+     bottom: 10px;
+     left: -10px;
+     
+}
+
+
+.result-field{
+    text-align: left;
+    padding-left: 20px;
+    color: tomato;
+    font-size: 30px;
+}
+
+.Top-field , .result-field ,.Bottom-field{
+    font-family: monospace;
+}
+.Top-field ,.Bottom-field{
+    padding-right: 20px;
+}
+
+
+
+
+#button-x:hover,
+#button-plus:hover,#button-minus:hover,
+#button-1:hover,#button-2:hover,
+#button-3:hover,#button-4:hover,
+#button-5:hover,#button-6:hover,
+#button-7:hover,#button-8:hover,
+#button-9:hover,#button-0:hover,
+#button-AC:hover,#button-DE:hover,
+#button-dote:hover,#button-division:hover,
+#button-00:hover,#button-equal:hover{
+
+    background-color: #23610f;
+}
+
+
+/* ********************************left side******************************************************** */
+
+.colliction1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+}
+
+.colliction1 i{
+    margin: 20px;
+}
+
+#icone-1{
+    color: var(--dymbolcolors);
+    font-size: 50px;
+    position: relative;
+    left: 247px;
+    bottom: 96px;
+    transform: rotate(-45deg);
+    transition: transform 1s;
+}
+
+
+
+
+#icone-1:hover 
+{
+    transform: rotate(360deg);
+}
+
+#icone-plus{
+
+    color: var(--dymbolcolors);
+    font-size: 90px;
+    position: relative;
+    left: 55px;
+    bottom: 270px;
+    transform: rotate(0deg);
+    transition: font-size 1s, transform 1s;
+}
+#icone-plus:hover 
+{
+    font-size: 50px;
+    transform: rotate(180deg);
+}
+
+#icone-4{
+
+    color: var(--dymbolcolors);
+    font-size: 70px;
+    position: relative;
+    left: 250px;
+    bottom: 96px;
+    transform: rotate(-45deg);
+    transition:  left 1s;
+
+}
+
+#icone-4:hover
+{
+    left: 50px;
+}
+
+#icone-minus
+{
+    color: var(--dymbolcolors);
+    font-size: 70px;
+    position: relative;
+    left: 19px;
+    bottom: 270px;
+    transform: rotate(0deg);
+    transition: transform 1s;
+}
+
+#icone-minus:hover
+{
+    transform: rotate(360deg);
+}
+
+
+
+#icone-not-equal
+{
+    color: var(--dymbolcolors);
+    font-size: 100px;
+    position: relative;
+    left: 100px;
+    bottom: 200px;
+    transform: rotate(-10deg);
+    transition: left 1s;
+}
+
+#icone-not-equal:hover
+{
+    left: 10px;
+}
+
+#icone-8{
+    color: var(--dymbolcolors);
+    opacity: 0.8;
+    font-size: 100px;
+    position: relative;
+    left: 100px;
+    bottom: 110px;
+    transform: rotate(-10deg);
+    transition: font-size 2s;
+
+}
+
+#icone-8:hover{
+    font-size: 5px;
+}
+
+
+
+
+/* ********************************right side******************************************************** */
+
+
+.colliction2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+}
+.colliction2 i{
+    margin: 20px;
+}
+
+
+#icone-infinity{
+    color: var(--dymbolcolors);
+    font-size: 90px;
+    position: relative;
+    left: 930px;
+    bottom: 40px;
+    transform: rotate(0deg);
+    transition: font-size 1s , transform 1s;
+}
+#icone-infinity:hover
+{
+    font-size: 30px;
+    transform: rotate(360deg);
+}
+
+
+#icone-percent{
+
+    color: var(--dymbolcolors);
+    font-size: 50px;
+    position: relative;
+    left: 1150px;
+    bottom: 10px;
+    transform: rotate(40deg);
+    transition: font-size 1s;
+}
+
+#icone-percent:hover
+{
+    font-size:10px ;
+}
+
+#icone-squarRoot{
+    color: var(--dymbolcolors);
+    font-size: 100px;
+    position: relative;
+    left: 1000px;
+    bottom: -20px;
+    transform: rotate(40deg);
+    transition: font-size 1s;
+}
+
+#icone-squarRoot:hover{
+    font-size: 30px;
+}
+
+#icone-plus-minus
+{
+    color: var(--dymbolcolors);
+    font-size: 70px;
+    position: relative;
+    left: 1000px;
+    bottom: -100px;
+    transform: rotate(0deg);
+    transition: left 2s, bottom 2s;
+}
+
+#icone-plus-minus:hover{
+    left: 900px;
+    bottom: 100px;
+}
+
+#icone-9{
+    color: var(--dymbolcolors);
+    font-size: 70px;
+    position: relative;
+    left: 1150px;
+    bottom: 10px;
+    transform: rotate(-45deg);
+    transition: transform 1s;
+}
+#icone-9:hover{
+    transform: rotate(360deg);
+}
+/* ********************************media ******************************************************** */
+
+
+
+    @media (max-width: 430px) {
+
+        .big-pa{
+        
+            background:#54B435;
+            height: 160vh;
+        }
+
+        .Top-field ,.Bottom-field{
+            padding-right: 10px;
+        }
+
+        .calculator {
+            width: 90%;
+        }
+    
+        .nav-icones {
+            display: none;
+        }
+    
+        .logo {
+            left: 150px;
+            display: none;
+        }
+    
+        .colliction1,
+        .colliction2 {
+            display: none;
+        }
+    
+        .nav-bar {
+            justify-content: center;
+            gap: 10px;
+        }
+    
+        .nav-bar .logo {
+            font-size: 10px;
+        }
+    
+        .container {
+            width: 90%;
+        }
+    
+        form .display {
+            height: 200px;
+            width: 290px;
+        }
+    
+        form .display,
+        .result-field {
+            font-size: 50px;
+        }
+    
+        .calculator .container form input {
+            width: 50px;
+            height: 40px;
+            font-size: 20px;
+        }
+    
+        .Top-field,
+        .Bottom-field {
+            font-size: 30px;
+        }
+    
+        #darkmode i,
+        #setting i,
+        #clearicone {
+            font-size: 30px;
+        }
+    
+        #darkmode-symbol-id:hover,
+        #settingId:hover,
+        #clearicone:hover {
+            font-size: 25px;
+        }
+    }
+    
 
 
